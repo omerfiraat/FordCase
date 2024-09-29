@@ -7,15 +7,36 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		045CCF962CA94FBD002B2220 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045CCF952CA94FBD002B2220 /* User.swift */; };
+		045CCF982CA95064002B2220 /* SearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045CCF972CA95064002B2220 /* SearchResult.swift */; };
+		045CCF9B2CA9508D002B2220 /* APIEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045CCF9A2CA9508D002B2220 /* APIEndpoint.swift */; };
+		045CCF9D2CA9509F002B2220 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045CCF9C2CA9509F002B2220 /* NetworkManager.swift */; };
+		045CCF9F2CA950B4002B2220 /* UserSearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045CCF9E2CA950B4002B2220 /* UserSearchViewModel.swift */; };
+		045CCFA12CA950C6002B2220 /* RepoListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045CCFA02CA950C6002B2220 /* RepoListViewModel.swift */; };
+		045CCFA32CA95166002B2220 /* RepoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045CCFA22CA95166002B2220 /* RepoListViewController.swift */; };
+		045CCFA62CA95197002B2220 /* Repo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045CCFA52CA95197002B2220 /* Repo.swift */; };
+		045CCFAA2CA95F47002B2220 /* CustomRepoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045CCFA92CA95F47002B2220 /* CustomRepoCell.swift */; };
+		045CCFAC2CA966BC002B2220 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045CCFAB2CA966BC002B2220 /* UserCell.swift */; };
 		04854FFD2CA94C3B000CBA01 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04854FFC2CA94C3B000CBA01 /* AppDelegate.swift */; };
 		04854FFF2CA94C3B000CBA01 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04854FFE2CA94C3B000CBA01 /* SceneDelegate.swift */; };
 		048550012CA94C3B000CBA01 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048550002CA94C3B000CBA01 /* ViewController.swift */; };
 		048550042CA94C3B000CBA01 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 048550022CA94C3B000CBA01 /* Main.storyboard */; };
 		048550062CA94C3D000CBA01 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 048550052CA94C3D000CBA01 /* Assets.xcassets */; };
 		048550092CA94C3D000CBA01 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 048550072CA94C3D000CBA01 /* LaunchScreen.storyboard */; };
+		FE2404CC06C3653E971A0566 /* Pods_FordCase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD3A7E9E88890827E65A1255 /* Pods_FordCase.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		045CCF952CA94FBD002B2220 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		045CCF972CA95064002B2220 /* SearchResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResult.swift; sourceTree = "<group>"; };
+		045CCF9A2CA9508D002B2220 /* APIEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIEndpoint.swift; sourceTree = "<group>"; };
+		045CCF9C2CA9509F002B2220 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		045CCF9E2CA950B4002B2220 /* UserSearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSearchViewModel.swift; sourceTree = "<group>"; };
+		045CCFA02CA950C6002B2220 /* RepoListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoListViewModel.swift; sourceTree = "<group>"; };
+		045CCFA22CA95166002B2220 /* RepoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoListViewController.swift; sourceTree = "<group>"; };
+		045CCFA52CA95197002B2220 /* Repo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repo.swift; sourceTree = "<group>"; };
+		045CCFA92CA95F47002B2220 /* CustomRepoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomRepoCell.swift; sourceTree = "<group>"; };
+		045CCFAB2CA966BC002B2220 /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
 		04854FF92CA94C3B000CBA01 /* FordCase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FordCase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04854FFC2CA94C3B000CBA01 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04854FFE2CA94C3B000CBA01 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +45,9 @@
 		048550052CA94C3D000CBA01 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		048550082CA94C3D000CBA01 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0485500A2CA94C3D000CBA01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		07B216B34493098F04F8EDC9 /* Pods-FordCase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FordCase.release.xcconfig"; path = "Target Support Files/Pods-FordCase/Pods-FordCase.release.xcconfig"; sourceTree = "<group>"; };
+		69ACFD354B2A50548B0855E2 /* Pods-FordCase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FordCase.debug.xcconfig"; path = "Target Support Files/Pods-FordCase/Pods-FordCase.debug.xcconfig"; sourceTree = "<group>"; };
+		CD3A7E9E88890827E65A1255 /* Pods_FordCase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FordCase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +55,59 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE2404CC06C3653E971A0566 /* Pods_FordCase.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		045CCF992CA9507C002B2220 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				045CCF9A2CA9508D002B2220 /* APIEndpoint.swift */,
+				045CCF9C2CA9509F002B2220 /* NetworkManager.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		045CCFA42CA95182002B2220 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				045CCF952CA94FBD002B2220 /* User.swift */,
+				045CCF972CA95064002B2220 /* SearchResult.swift */,
+				045CCFA52CA95197002B2220 /* Repo.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		045CCFA72CA951B5002B2220 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				045CCF9E2CA950B4002B2220 /* UserSearchViewModel.swift */,
+				045CCFA02CA950C6002B2220 /* RepoListViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		045CCFA82CA951CF002B2220 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				048550002CA94C3B000CBA01 /* ViewController.swift */,
+				045CCFA22CA95166002B2220 /* RepoListViewController.swift */,
+				045CCFA92CA95F47002B2220 /* CustomRepoCell.swift */,
+				045CCFAB2CA966BC002B2220 /* UserCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		04854FF02CA94C3B000CBA01 = {
 			isa = PBXGroup;
 			children = (
 				04854FFB2CA94C3B000CBA01 /* FordCase */,
 				04854FFA2CA94C3B000CBA01 /* Products */,
+				D98F4B9BBCB9DCD4D0B0783F /* Pods */,
+				53E6F56066351AFFC48108EA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,9 +122,12 @@
 		04854FFB2CA94C3B000CBA01 /* FordCase */ = {
 			isa = PBXGroup;
 			children = (
+				045CCFA42CA95182002B2220 /* Models */,
+				045CCFA72CA951B5002B2220 /* ViewModels */,
+				045CCFA82CA951CF002B2220 /* Views */,
 				048550102CA94C94000CBA01 /* Application */,
-				048550112CA94CA5000CBA01 /* Landing */,
 				048550152CA94CE5000CBA01 /* SupportingFiles */,
+				045CCF992CA9507C002B2220 /* Networking */,
 				048550022CA94C3B000CBA01 /* Main.storyboard */,
 				048550052CA94C3D000CBA01 /* Assets.xcassets */,
 			);
@@ -74,38 +143,6 @@
 			path = Application;
 			sourceTree = "<group>";
 		};
-		048550112CA94CA5000CBA01 /* Landing */ = {
-			isa = PBXGroup;
-			children = (
-				048550142CA94CBE000CBA01 /* Model */,
-				048550132CA94CB8000CBA01 /* View */,
-				048550122CA94CB3000CBA01 /* ViewModel */,
-			);
-			path = Landing;
-			sourceTree = "<group>";
-		};
-		048550122CA94CB3000CBA01 /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewModel;
-			sourceTree = "<group>";
-		};
-		048550132CA94CB8000CBA01 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				048550002CA94C3B000CBA01 /* ViewController.swift */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		048550142CA94CBE000CBA01 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
 		048550152CA94CE5000CBA01 /* SupportingFiles */ = {
 			isa = PBXGroup;
 			children = (
@@ -115,6 +152,23 @@
 			path = SupportingFiles;
 			sourceTree = "<group>";
 		};
+		53E6F56066351AFFC48108EA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CD3A7E9E88890827E65A1255 /* Pods_FordCase.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D98F4B9BBCB9DCD4D0B0783F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				69ACFD354B2A50548B0855E2 /* Pods-FordCase.debug.xcconfig */,
+				07B216B34493098F04F8EDC9 /* Pods-FordCase.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -122,9 +176,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0485500D2CA94C3D000CBA01 /* Build configuration list for PBXNativeTarget "FordCase" */;
 			buildPhases = (
+				50CB6A04E794AE578C5CD6D8 /* [CP] Check Pods Manifest.lock */,
 				04854FF52CA94C3B000CBA01 /* Sources */,
 				04854FF62CA94C3B000CBA01 /* Frameworks */,
 				04854FF72CA94C3B000CBA01 /* Resources */,
+				1574BDC50C00FE30CEBA7AE4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -181,14 +237,66 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1574BDC50C00FE30CEBA7AE4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FordCase/Pods-FordCase-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FordCase/Pods-FordCase-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FordCase/Pods-FordCase-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		50CB6A04E794AE578C5CD6D8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FordCase-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		04854FF52CA94C3B000CBA01 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				045CCFAA2CA95F47002B2220 /* CustomRepoCell.swift in Sources */,
+				045CCFAC2CA966BC002B2220 /* UserCell.swift in Sources */,
+				045CCFA62CA95197002B2220 /* Repo.swift in Sources */,
+				045CCF962CA94FBD002B2220 /* User.swift in Sources */,
+				045CCF9B2CA9508D002B2220 /* APIEndpoint.swift in Sources */,
+				045CCFA32CA95166002B2220 /* RepoListViewController.swift in Sources */,
 				048550012CA94C3B000CBA01 /* ViewController.swift in Sources */,
+				045CCF9D2CA9509F002B2220 /* NetworkManager.swift in Sources */,
 				04854FFD2CA94C3B000CBA01 /* AppDelegate.swift in Sources */,
+				045CCF9F2CA950B4002B2220 /* UserSearchViewModel.swift in Sources */,
+				045CCF982CA95064002B2220 /* SearchResult.swift in Sources */,
 				04854FFF2CA94C3B000CBA01 /* SceneDelegate.swift in Sources */,
+				045CCFA12CA950C6002B2220 /* RepoListViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -335,18 +443,22 @@
 		};
 		0485500E2CA94C3D000CBA01 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 69ACFD354B2A50548B0855E2 /* Pods-FordCase.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DTSAAQTA2J;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = FordCase/Info.plist;
+				INFOPLIST_FILE = FordCase/SupportingFiles/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -362,18 +474,22 @@
 		};
 		0485500F2CA94C3D000CBA01 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 07B216B34493098F04F8EDC9 /* Pods-FordCase.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DTSAAQTA2J;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = FordCase/Info.plist;
+				INFOPLIST_FILE = FordCase/SupportingFiles/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
