@@ -56,15 +56,63 @@
 		04854FFB2CA94C3B000CBA01 /* FordCase */ = {
 			isa = PBXGroup;
 			children = (
-				04854FFC2CA94C3B000CBA01 /* AppDelegate.swift */,
-				04854FFE2CA94C3B000CBA01 /* SceneDelegate.swift */,
-				048550002CA94C3B000CBA01 /* ViewController.swift */,
+				048550102CA94C94000CBA01 /* Application */,
+				048550112CA94CA5000CBA01 /* Landing */,
+				048550152CA94CE5000CBA01 /* SupportingFiles */,
 				048550022CA94C3B000CBA01 /* Main.storyboard */,
 				048550052CA94C3D000CBA01 /* Assets.xcassets */,
+			);
+			path = FordCase;
+			sourceTree = "<group>";
+		};
+		048550102CA94C94000CBA01 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				04854FFC2CA94C3B000CBA01 /* AppDelegate.swift */,
+				04854FFE2CA94C3B000CBA01 /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		048550112CA94CA5000CBA01 /* Landing */ = {
+			isa = PBXGroup;
+			children = (
+				048550142CA94CBE000CBA01 /* Model */,
+				048550132CA94CB8000CBA01 /* View */,
+				048550122CA94CB3000CBA01 /* ViewModel */,
+			);
+			path = Landing;
+			sourceTree = "<group>";
+		};
+		048550122CA94CB3000CBA01 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		048550132CA94CB8000CBA01 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				048550002CA94C3B000CBA01 /* ViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		048550142CA94CBE000CBA01 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		048550152CA94CE5000CBA01 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
 				048550072CA94C3D000CBA01 /* LaunchScreen.storyboard */,
 				0485500A2CA94C3D000CBA01 /* Info.plist */,
 			);
-			path = FordCase;
+			path = SupportingFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
