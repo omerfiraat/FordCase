@@ -95,3 +95,51 @@ If you'd like to contribute to the project:
 3. Commit your changes: `git commit -m 'Add my feature'`
 4. Push to the branch: `git push origin my-feature`
 5. Open a pull request.
+
+## Security Considerations
+
+This application is designed with several security practices in mind to ensure user data and API requests are handled safely. Below are potential security risks and the measures taken to mitigate them:
+
+### 1. API Rate Limiting and DDoS Protection:
+   - **Risk**: The app may hit the GitHub API rate limit or become vulnerable to DDoS attacks by sending too many requests.
+   - **Mitigation**: 
+     - The app monitors API rate limits and introduces wait times to prevent excessive requests.
+     - A retry mechanism is implemented to handle 403 and 429 errors by pausing requests for a set duration before retrying.
+
+### 2. Lack of API Authentication:
+   - **Risk**: Unauthenticated API requests are limited to 60 per hour, potentially limiting the app’s functionality.
+   - **Mitigation**: 
+     - Use of an OAuth token or personal access token for authenticated requests to increase rate limits.
+     - Environment variables should be used to securely store API keys instead of hardcoding them in the app.
+
+### 3. Data Transmission Security:
+   - **Risk**: Sensitive data like usernames may be transmitted without encryption.
+   - **Mitigation**: 
+     - Ensure all HTTP requests use HTTPS.
+     - Implement additional network security measures like SSL certificate validation to prevent insecure requests.
+
+### 4. Local Data Security:
+   - **Risk**: Data stored offline (cached using Realm) could be compromised if the device is rooted.
+   - **Mitigation**: 
+     - Use encryption for Realm database storage to secure cached data.
+     - Store encryption keys in the iOS Keychain to keep them secure.
+
+### 5. Input Validation:
+   - **Risk**: Invalid or malicious input can cause security vulnerabilities like SQL injection, XSS, or buffer overflow.
+   - **Mitigation**: 
+     - Properly validate all user input, including username length, allowed characters, and format.
+     - Escape special characters and sanitize input before sending it to the API.
+
+### 6. Data Storage and Permission Management:
+   - **Risk**: Excessive permissions requested from the user could expose vulnerabilities.
+   - **Mitigation**: 
+     - Request only the necessary iOS permissions (e.g., internet access) and avoid asking for permissions the app doesn't need.
+     - Utilize the iOS sandbox to restrict access to sensitive data.
+
+### 7. Authentication and Session Management:
+   - **Risk**: If OAuth tokens or API keys are used, improper handling could lead to unauthorized access.
+   - **Mitigation**: 
+     - Store tokens and sensitive data securely in the iOS Keychain.
+     - Ensure tokens are refreshed or re-authentication is required when the session expires.
+
+By following these security practices, the app minimizes potential vulnerabilities and ensures better protection for user data and API interactions.
