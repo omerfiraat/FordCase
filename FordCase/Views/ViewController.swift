@@ -9,12 +9,12 @@ import UIKit
 import SnapKit
 import RealmSwift
 
-class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UITextFieldDelegate {
+final class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UITextFieldDelegate {
 
-    private let searchTextField = UITextField()
-    private let tableView = UITableView()
-    private var viewModel = UserSearchViewModel()
-    private var currentQuery: String = ""
+    private lazy var searchTextField = UITextField()
+    private lazy var tableView = UITableView()
+    private lazy var viewModel = UserSearchViewModel()
+    private lazy var currentQuery: String = ""
     private var tapGesture: UITapGestureRecognizer?
     
     override func viewDidLoad() {
@@ -35,6 +35,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         searchTextField.placeholder = "Kullanıcı adı girin"
         searchTextField.borderStyle = .roundedRect
         searchTextField.delegate = self
+        searchTextField.backgroundColor = .white
 
         searchTextField.snp.makeConstraints { make in
             make.top.equalTo(view.safeAreaLayoutGuide.snp.top).offset(16)

@@ -6,7 +6,7 @@
 //
 import RealmSwift
 
-class Repo: Object, Decodable {
+final class Repo: Object, Decodable {
     @Persisted(primaryKey: true) var id: Int
     @Persisted var name: String
     @Persisted var fullName: String

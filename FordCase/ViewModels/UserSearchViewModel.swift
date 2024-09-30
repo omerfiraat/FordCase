@@ -7,12 +7,12 @@
 
 import Foundation
 
-class UserSearchViewModel {
+final class UserSearchViewModel {
     
-    var users: [User] = []
-    var page = 1
-    var isFetching = false
-    var hasMoreData = true
+    lazy var users: [User] = []
+    lazy var page = 1
+    lazy var isFetching = false
+    lazy var hasMoreData = true
     var onUsersFetched: (() -> Void)?
     
     func resetSearch() {

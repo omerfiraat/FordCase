@@ -9,13 +9,13 @@ import UIKit
 import SnapKit
 import Kingfisher
 
-class CustomRepoCell: UICollectionViewCell {
-    private let profileImageView = UIImageView()
-    private let nameLabel = UILabel()
-    private let ownerLabel = UILabel()
-    private let forkLabel = UILabel()
-    private let watchLabel = UILabel()
-    private let sizeLabel = UILabel()
+final class CustomRepoCell: UICollectionViewCell {
+    private lazy var profileImageView = UIImageView()
+    private lazy var nameLabel = UILabel()
+    private lazy var ownerLabel = UILabel()
+    private lazy var forkLabel = UILabel()
+    private lazy var watchLabel = UILabel()
+    private lazy var sizeLabel = UILabel()
 
     override init(frame: CGRect) {
         super.init(frame: frame)

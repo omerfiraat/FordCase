@@ -8,11 +8,11 @@
 import UIKit
 import SnapKit
 
-class RepoListViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+final class RepoListViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
 
     private let viewModel: RepoListViewModel
     private var collectionView: UICollectionView!
-    private var layoutType: LayoutType = .oneViewInRow
+    private lazy var layoutType: LayoutType = .oneViewInRow
 
     enum LayoutType {
         case oneViewInRow, twoViewsInRow, threeViewsInRow

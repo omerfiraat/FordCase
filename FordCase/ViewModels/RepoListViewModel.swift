@@ -9,14 +9,14 @@ import Foundation
 import RealmSwift
 import Network
 
-class RepoListViewModel {
+final class RepoListViewModel {
 
     let username: String
-    var repos: [Repo] = []
-    var page = 1
+    lazy var repos: [Repo] = []
+    lazy var page = 1
     let perPage = 10
-    var isFetching = false
-    var hasMoreData = true
+    lazy var isFetching = false
+    lazy var hasMoreData = true
     var onReposFetched: (() -> Void)?
 
     let realm = try! Realm()
